@@ -1,4 +1,4 @@
-# CLAS12 RGA $\Lambda$ Baryon Polarization Analysis
+# CLAS12 RGA $\Lambda K^{+}$ TFR+CFR Correlation Analysis
 
 This is a storage repository for yamls and scripts used to run the CLAS12 RGA $\Lambda K^+$ TFR+CFR correlation analysis.
 
