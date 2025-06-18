@@ -12,8 +12,8 @@ var_formulas: #NOTE: Variable definitions will be applied in order in case of de
   - ["dphi_h_k_ppim_mc","(float)(phi_h_k_mc-phi_h_ppim_mc)"]
 binschemes: #NOTE: Structure for bin schemes is { binscheme_name: { binvar_name: [binlimits] } }
 binschemes_paths: ["/RGA_LAMBDA_KAON_ANALYSIS_HOME/yamls/out_1d_bins_ppimk.yaml"]
-binvars: ["x","xF_ppim","zeta_ppim","xF_k","z_k","ptpt"] #NOTE: INCLUDE ALL VARIABLE NAMES AND LIMITS TO AUTOMATICALLY APPLY OVERALL LIMIT CUTS
-binvar_lims: [[0,1],[-1,0],[0,1],[0,1],[0,1],[0,2.0]]
+binvars: ["Q2","x","xF_ppim","zeta_ppim","xF_k","z_k","ptpt"] #NOTE: INCLUDE ALL VARIABLE NAMES AND LIMITS TO AUTOMATICALLY APPLY OVERALL LIMIT CUTS
+binvar_lims: [[1,11],[0,1],[-1,0],[0,1],[0,1],[0,1],[0,2.0]]
 depolvars: []
 depolvar_lims: []
 asymfitvars: ["dphi_h_k_ppim"]
