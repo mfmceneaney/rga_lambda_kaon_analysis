@@ -59,10 +59,10 @@ binschemes: #NOTE: Structure for bin schemes is { binscheme_name: { binvar_name:
 binschemes_paths: ["/RGA_LAMBDA_KAON_ANALYSIS_HOME/yamls/out_1d_bins_ppimk.yaml"] #NOTE: You can alternately load a bin scheme from another YAML file if you do not put a map under `binschemes` above.
 nbatches: 1 #NOTE: You can batch all bin schemes if they are large to allow for parellelization
 ibatch: 0 #NOTE: Specify the bin scheme batch index here
-binvars: ["run","x","xF_ppim","zeta_ppim","xF_k","z_k","ptpt"]
-binvar_titles: ["run","x","x_{F p#pi^{-}}","#zeta_{p#pi^{-}}","x_{F K^{+}}","z_{K^{+}}","P_{#perp,K^{+}}P_{#perp,p#pi^{-}} (GeV^{2})"]
-binvar_lims: [[1,100],[0,1],[-1,0],[0,1],[0,1],[0,1],[0,2.0]]
-binvar_bins: [16,16,16,16,16,16,16]
+binvars: ["Q2","x","xF_ppim","zeta_ppim","xF_k","z_k","ptpt"]
+binvar_titles: ["Q^{2} (GeV^{2})","x","x_{F p#pi^{-}}","#zeta_{p#pi^{-}}","x_{F K^{+}}","z_{K^{+}}","P_{#perp,K^{+}}P_{#perp,p#pi^{-}} (GeV^{2})"]
+binvar_lims: [[1,11],[0,1],[-1,0],[0,1],[0,1],[0,1],[0,2.0]]
+binvar_bins: [16,16,16,16,16,16,16,16]
 depolvars: []
 depolvar_titles: []
 depolvar_lims: []
