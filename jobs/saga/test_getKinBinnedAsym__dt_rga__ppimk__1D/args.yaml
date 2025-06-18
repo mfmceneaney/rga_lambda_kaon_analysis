@@ -1,5 +1,5 @@
 baseoutpath: "out_" #NOTE: This will be prepended to the default output path like so: `<baseoutpath><binscheme_name>.csv`.
-inpath: "/RGA_LAMBDA_KAON_ANALYSIS_VOL_DIR/jobs/dt_rga/skim_*.root"
+inpath: "/RGA_LAMBDA_KAON_ANALYSIS_VOL_DIR/jobs/c12analysis/dt_rga/skim_*.root"
 tree: "t"
 nthreads: 1
 cuts: "mass_ppim<1.24 && Q2>1 && W>2 && y<0.8 && xF_ppim<0.0 && xF_k>0.0"
@@ -54,9 +54,7 @@ htspin_states:
   minus: -1
 var_formulas: #NOTE: Variable definitions will be applied in order in case of dependencies, and they should follow the form [variable_name,formula].
   - ["ptpt","(float)(phperp_k*phperp_ppim)"]
-  - ["ptpt_mc","(float)(phperp_k_mc*phperp_ppim_mc)"]
   - ["dphi_h_k_ppim","(float)(phi_h_k-phi_h_ppim)"]
-  - ["dphi_h_k_ppim_mc","(float)(phi_h_k_mc-phi_h_ppim_mc)"]
 binschemes: #NOTE: Structure for bin schemes is { binscheme_name: { binvar_name: [binlimits] } }
 binschemes_paths: ["/RGA_LAMBDA_KAON_ANALYSIS_HOME/yamls/out_1d_bins_ppimk.yaml"] #NOTE: You can alternately load a bin scheme from another YAML file if you do not put a map under `binschemes` above.
 nbatches: 1 #NOTE: You can batch all bin schemes if they are large to allow for parellelization
